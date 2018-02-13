@@ -8,7 +8,7 @@ $npm install
 $gulp 
 ```
 ## Desktop
-<img src="./comps/home.jpg" width="300"> <img src="./comps/quickview.jpg" width="300">
+<img src="./comps/home.jpg" width="350"> <img src="./comps/quickview.jpg" width="350">
 
 ## Technologies Used
 ```bash
