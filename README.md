@@ -1,14 +1,13 @@
 # BestBuy-ShoppingCart
 Display product using Best Buy API.
-Inspiration: https://github.com/philipduan/BestBuy-Project
 
-Download folder
+## Download folder
 ```bash
 $npm install 
 $gulp 
 ```
 ## Desktop
-<img src="./comps/home.jpg" width="350"> <img src="./comps/quickview.jpg" width="350">
+<img src="./comps/home.jpg" width="430"> <img src="./comps/quickview.jpg" width="430">
 
 ## Technologies Used
 ```bash
@@ -23,3 +22,4 @@ $gulp
 * Gulp
 * BxSlider
 ```
+Inspiration: https://github.com/philipduan/BestBuy-Project
