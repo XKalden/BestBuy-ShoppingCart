@@ -1,0 +1,36 @@
+nav{
+    background: $green-lit;
+    width: 100%;
+    margin-top: 1em;
+    ul{
+      display: flex;
+      justify-content: space-around;
+      font-size: .7em;
+      align-items: center;
+      height: 40px;
+      color: white;
+      text-transform: uppercase;
+      width: 80%;
+      margin: 0 auto;
+  
+      li{
+        &:hover{
+          color: $hover-link; 
+        }
+      }
+      .highlight{
+        color: $hover-link; 
+      }
+    }
+    @include tablet{
+      ul{
+        font-size: 1.2em;
+        height: 60px;
+      }    
+    }
+    @include desktop{
+      ul{
+        font-size: 1.4em;
+      }    
+    }
+  }

@@ -1,0 +1,72 @@
+
+footer{
+    background: $footer-bk;
+    color: white;
+    padding: 30px 0 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+ 
+    #updates{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+ 
+    #notStop{
+      font-size: 0.7em;
+      margin: 10px 0 20px 0;
+ 
+    }
+ 
+    form{
+      background: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      border-radius: 50px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 70%;
+      input{
+        margin-left: 20px;
+        width: 70%;
+ 
+      }
+      #submit{
+       background: $btn-color; 
+       border: 10px solid $btn-color;
+       border-radius: 0 50px 50px 0;
+       color: white;
+       font-size: 0.6em;
+       font-weight: bold;
+       text-transform: uppercase;
+       width: 20%;
+      }
+    }
+ 
+    p{
+     margin-top: 15px;
+   }
+ 
+    @include tablet{
+      #updates{
+        font-size: 2.7em;
+      }
+ 
+      #notStop{
+        font-size: 1.2em;
+      }
+ 
+      form{
+        border: 5px solid #FFFFFF;
+ 
+        input{
+          font-size: 1.5em;
+        }
+        #submit{
+          font-size: 1.5em;
+        }
+      }
+    }
+  }

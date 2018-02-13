@@ -1,0 +1,51 @@
+
+.brandMessage{
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  
+    h2{
+      font-size: .8em;
+      font-weight: bold;
+      text-transform: uppercase;
+      span{
+        color: $green-lit;
+      }
+    }
+    p{
+      color: gray;
+      font-size: 0.8em;
+      width: 80%;
+      margin-top:1em;
+      margin-left: auto;
+      margin-right:auto;
+    
+    }
+  
+    @include tablet{
+        height: 250px;
+        h2{
+          font-size:1.7em;
+        }
+        p{
+          font-size: 1.2em;
+        }
+    
+    }
+    @include desktop{
+  
+      height: 300px;
+      h2{
+        font-size:2.3em;
+      }
+      p{
+        font-size: 1.7em;
+      }
+    } 
+  }
+
+
+  

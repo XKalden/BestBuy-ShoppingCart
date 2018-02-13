@@ -1,0 +1,159 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overlay{
+    background-color: rgba(0,0,0,0.8);
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+  
+    .overlay-content{
+      background: white;
+      height: 60%;
+      padding: 7% 0 0 3%;
+      margin: 100px auto;
+      overflow-y: scroll;
+      position: relative;
+      width: 80%;
+  
+      a{
+        background: lightblue;
+        color: white;
+        cursor: pointer;
+        font-size: 2em;
+        font-weight: bold;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+      }
+  
+      .head{
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        width: 100%;
+        h1{
+          font-size: 2.5em;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        pre{
+          span{
+            color: #63AB86;
+          }
+        }
+      }
+  
+      .pay{
+        align-items: center;
+        display: flex;
+        margin: 30px 0;
+        width: 100%;
+  
+        p, p1{
+          font-size: 0.8em;
+          text-transform: uppercase;
+          width: 20%;
+        }
+  
+        p1{
+          width: 30%;
+          input{
+            border: 1px solid #BBBBBB;
+            display:  inline-block;
+            margin-left: 3px;
+            padding: 0 1px;
+            text-align: center;
+            width: 25px;
+          }
+        }
+  
+        .duo{
+          display: flex;
+          padding: 0 1%;
+          width: 30%;
+          button{
+            color: #FFFFFF;
+            font-size: 0.8em;
+            padding: 0 2px;
+            text-transform: uppercase;
+            width: 49%;
+          }
+          #update{
+            border: 5px solid #63AB86;
+            border-radius: 50px 0 0 50px;
+            background: #63AB86;
+          }
+          #remove{
+            border: 5px solid #D82833;
+            border-radius: 0 50px 50px 0;
+            background: #D82833;
+          }
+        }
+      }
+  
+      @include tablet{
+        padding-top: 3%;
+        width: 60%;
+        .head{
+          h1{
+            font-size: 3em;
+          }
+          pre{
+            font-size: 1.3em;
+            span{
+              color: #63AB86;
+            }
+          }
+        }
+  
+        .pay{
+   
+          p, p1{
+            font-size: 1em;
+          }
+    
+          .duo{
+            button{
+              font-size: 1em;
+            }
+          }
+        }
+      }
+  
+      @include desktop{
+        width: 50%;
+        .head{
+          h1{
+            font-size: 3em;
+          }
+          pre{
+            font-size: 1.3em;
+            span{
+              color: #63AB86;
+            }
+          }
+        }
+  
+        .pay{
+   
+          p, p1{
+            font-size: 1em;
+          }
+    
+          .duo{
+            button{
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }

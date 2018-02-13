@@ -1,0 +1,15 @@
+// Tablet 
+@mixin tablet{
+    @media screen and (min-width: $tablet-width){
+        @content;
+    }
+}
+
+// Desktop
+@mixin desktop{
+    @media screen and (min-width: $desktop-width){
+        @content;
+    }
+}
+
+
